@@ -24,6 +24,16 @@ export default function Home() {
 
   return (
     <main>
+      <nav className="navbar">
+        <div className="logo">LP</div>
+
+        <div className="navLinks">
+          #work
+          #journey
+          #contact>
+        </div>
+      </nav>
+
       <section className="hero">
         <p className="tag">
           Salesforce Developer • Tableau Developer • AI Graduate Student
@@ -41,13 +51,11 @@ export default function Home() {
         </h2>
 
         <div className="buttons">
-          #work
+          work" className="btn">
             View Work
           </a>
 
           /resume.pdf
-            Download Resume
-          </a>
         </div>
       </section>
 
@@ -64,7 +72,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
+      <section id="journey">
         <h3>CAREER JOURNEY</h3>
 
         <div className="timeline">
@@ -91,7 +99,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
+      <section id="contact">
         <h3>CONTACT</h3>
 
         <div className="timeline">
