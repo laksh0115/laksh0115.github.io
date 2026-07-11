@@ -1,4 +1,27 @@
 export default function Home() {
+  const projects = [
+    {
+      title: "Opportunity to POS Automation",
+      description:
+        "Automated Opportunity-to-POS matching workflow using Salesforce, Apex and integrations.",
+    },
+    {
+      title: "Trade-In Automation",
+      description:
+        "Streamlined trade-in request processing and approval automation.",
+    },
+    {
+      title: "Marketing Analytics Platform",
+      description:
+        "Unified Tableau reporting with marketing and web analytics.",
+    },
+    {
+      title: "Sitecore Accessibility Project",
+      description:
+        "Enhanced accessibility compliance and user experience.",
+    },
+  ];
+
   return (
     <main>
       <section className="hero">
@@ -22,50 +45,60 @@ export default function Home() {
             View Work
           </a>
 
-          /resume.pdf secondary"
-          >
+          /resume.pdf
             Download Resume
           </a>
         </div>
       </section>
 
       <section id="work">
-        <h3>Featured Work</h3>
+        <h3>FEATURED WORK</h3>
 
-        <div className="projectCard">
-          Opportunity to POS Automation
-        </div>
-
-        <div className="projectCard">
-          Tableau Executive Dashboards
-        </div>
-
-        <div className="projectCard">
-          Trade-In Automation
-        </div>
-
-        <div className="projectCard">
-          AI Portfolio Projects
+        <div className="projects">
+          {projects.map((project) => (
+            <div className="projectCard" key={project.title}>
+              <h4>{project.title}</h4>
+              <p>{project.description}</p>
+            </div>
+          ))}
         </div>
       </section>
 
       <section>
-        <h3>Career Journey</h3>
+        <h3>CAREER JOURNEY</h3>
 
-        <div>
-          <p>2022 - Master's in Data Science</p>
-          <p>2023 - Salesforce & Tableau Developer</p>
-          <p>2025 - Master's in Artificial Intelligence</p>
-          <p>2026 - AI-ML Course Artifacts</p>
+        <div className="timeline">
+          <div>2022 — Master's in Data Science</div>
+          <div>2023 — Salesforce & Tableau Developer</div>
+          <div>2024 — Enterprise Automation Projects</div>
+          <div>2025 — Master's in Artificial Intelligence</div>
+          <div>2026 — AI Portfolio Development</div>
+          <div>Future — AI Solutions Architect</div>
         </div>
       </section>
 
       <section>
-        <h3>Contact</h3>
+        <h3>SKILLS</h3>
 
-        <p>GitHub</p>
-        <p>LinkedIn</p>
-        <p>Email</p>
+        <div className="skills">
+          <div>Salesforce — 95%</div>
+          <div>Apex / LWC — 94%</div>
+          <div>Tableau — 90%</div>
+          <div>SQL — 92%</div>
+          <div>Python — 85%</div>
+          <div>AI / Machine Learning — 80%</div>
+          <div>Sitecore — 85%</div>
+        </div>
+      </section>
+
+      <section>
+        <h3>CONTACT</h3>
+
+        <div className="timeline">
+          <div>GitHub: github.com/yourusername</div>
+          <div>LinkedIn: linkedin.com/in/yourprofile</div>
+          <div>Email: your@email.com</div>
+        </div>
       </section>
     </main>
   );
