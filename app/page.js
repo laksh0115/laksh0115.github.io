@@ -1,27 +1,4 @@
 export default function Home() {
-  const projects = [
-    {
-      title: "Opportunity to POS Automation",
-      description:
-        "Automated Opportunity-to-POS matching workflow using Salesforce, Apex, and integrations.",
-    },
-    {
-      title: "Trade-In Automation",
-      description:
-        "Streamlined trade-in request processing and approval automation.",
-    },
-    {
-      title: "Marketing Analytics Platform",
-      description:
-        "Unified Tableau reporting with marketing and web analytics.",
-    },
-    {
-      title: "Sitecore Accessibility Project",
-      description:
-        "Enhanced accessibility compliance and user experience.",
-    },
-  ];
-
   return (
     <main>
       <section className="hero">
@@ -42,68 +19,46 @@ export default function Home() {
           #work
 
           /resume.pdf
-            Download Resume
-          </a>
         </div>
-      </section>
-
-      <section className="about">
-        <h3>ABOUT</h3>
-
-        <p>
-          Salesforce Developer, Tableau Developer, and AI Graduate Student
-          focused on building intelligent enterprise solutions through CRM,
-          analytics, automation, and artificial intelligence.
-        </p>
       </section>
 
       <section id="work">
-        <h3>FEATURED WORK</h3>
+        <h3>Featured Work</h3>
 
-        <div className="projects">
-          {projects.map((project) => (
-            <div className="projectCard" key={project.title}>
-              <h4>{project.title}</h4>
-              <p>{project.description}</p>
-            </div>
-          ))}
+        <div className="projectCard">
+          Opportunity to POS Automation
+        </div>
+
+        <div className="projectCard">
+          Tableau Executive Dashboards
+        </div>
+
+        <div className="projectCard">
+          Trade-In Automation
+        </div>
+
+        <div className="projectCard">
+          AI Portfolio Projects
         </div>
       </section>
 
       <section>
-        <h3>CAREER JOURNEY</h3>
+        <h3>Career Journey</h3>
 
-        <div className="timeline">
-          <div>2022 — Master's in Data Science</div>
-          <div>2023 — Salesforce & Tableau Developer</div>
-          <div>2024 — Enterprise Automation Projects</div>
-          <div>2025 — Master's in Artificial Intelligence</div>
-          <div>2026 — AI Innovation & Portfolio Development</div>
-          <div>Future — AI Solutions Architect</div>
+        <div>
+          <p>2022 - Master's in Data Science</p>
+          <p>2023 - Salesforce & Tableau Developer</p>
+          <p>2025 - Master's in Artificial Intelligence</p>
+          <p>2026 - AI Portfolio Development</p>
         </div>
       </section>
 
       <section>
-        <h3>SKILLS</h3>
+        <h3>Contact</h3>
 
-        <div className="skills">
-          <div>Salesforce — 95%</div>
-          <div>Apex / LWC — 94%</div>
-          <div>Tableau — 90%</div>
-          <div>SQL — 92%</div>
-          <div>Python — 85%</div>
-          <div>AI / Machine Learning — 80%</div>
-        </div>
-      </section>
-
-      <section>
-        <h3>CONTACT</h3>
-
-        <div className="timeline">
-          <div>GitHub</div>
-          <div>LinkedIn</div>
-          <div>Email</div>
-        </div>
+        <p>GitHub</p>
+        <p>LinkedIn</p>
+        <p>Email</p>
       </section>
     </main>
   );
