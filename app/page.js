@@ -1,1 +1,123 @@
-"use client";import {useState} from "react";import {RadarChart,Radar,PolarGrid,PolarAngleAxis,ResponsiveContainer} from "recharts";export default function Home(){const[d,setD]=useState(true);const skills=[{skill:"Salesforce",v:95},{skill:"Tableau",v:90},{skill:"Apex",v:94},{skill:"SQL",v:92},{skill:"Python",v:85},{skill:"AI",v:80}];const projects=["Opportunity to POS Automation","Trade-In Automation","Tableau Executive Dashboards","Sitecore Accessibility","Marketing Analytics DW","AI Portfolio Projects"];return <div className="wrap"><button onClick={()=>setD(!d)}>Toggle Theme</button><section className="hero"><h1>Laxmi Patil</h1><h2>Salesforce Developer • Tableau Developer • AI Graduate Student</h2><p>Building Intelligent Enterprise Solutions through CRM, Analytics, Automation and Artificial Intelligence.</p><a className="btn" href="/resume.pdf" download>Download Resume</a></section><h2>About Me</h2><p>Salesforce and Tableau professional transitioning into AI. Master's in Data Science and pursuing Master's in Artificial Intelligence.</p><h2>Career Timeline</h2><div className="grid"><div className="card">2022 - Master's in Data Science</div><div className="card">2023 - Salesforce & Tableau Developer</div><div className="card">2025 - AI Master's Program</div><div className="card">2026+ - AI Solutions Architect Path</div></div><h2>Skills Radar Chart</h2><div style={{height:400}}><ResponsiveContainer><RadarChart data={skills}><PolarGrid/><PolarAngleAxis dataKey="skill"/><Radar dataKey="v" fill="#60a5fa" fillOpacity={0.6}/></RadarChart></ResponsiveContainer></div><h2>GitHub Projects Gallery</h2><div className="grid">{projects.map(p=><div className="card" key={p}><h3>{p}</h3><p>Add screenshot, GitHub link, tech stack and results.</p></div>)}</div><h2>Certifications</h2><div className="grid"><div className="card">Salesforce</div><div className="card">Tableau</div><div className="card">AI Certifications</div></div><h2>Education</h2><div className="card">University of Michigan-Dearborn - Data Science</div><div className="card">Master's in Artificial Intelligence</div><h2>Contact</h2><div className="card">LinkedIn | GitHub | Email</div></div>}
+export default function Home() {
+  const projects = [
+    {
+      title: "Opportunity → POS Automation",
+      desc: "Automated opportunity matching process using Salesforce, Apex and integrations."
+    },
+    {
+      title: "Marketing Analytics Platform",
+      desc: "Unified reporting using Tableau, SQL, Google Analytics and data warehouse."
+    },
+    {
+      title: "Sitecore Accessibility Initiative",
+      desc: "Improved accessibility compliance and user experience across enterprise websites."
+    },
+    {
+      title: "Trade-In Automation",
+      desc: "Automated trade-in workflows and approval processes in Salesforce."
+    }
+  ];
+
+  return (
+    <main>
+
+      <section className="hero">
+        <p className="tag">Salesforce × Analytics × AI</p>
+
+        <h1>
+          LAXMI
+          <br />
+          PATIL
+        </h1>
+
+        <h2>
+          Building Intelligent Enterprise Solutions Through CRM,
+          Analytics & Artificial Intelligence.
+        </h2>
+
+        <div className="buttons">
+          work" className="btn">
+            View Work
+          </a>
+
+          /resume.pdf
+            Download Resume
+          </a>
+        </div>
+      </section>
+
+      <section className="about">
+        <h3>ABOUT</h3>
+
+        <p>
+          I help organizations transform data into intelligent business
+          decisions.
+        </p>
+
+        <p>
+          My background combines Salesforce development, Tableau analytics,
+          enterprise automation and artificial intelligence to build scalable
+          business solutions that create measurable impact.
+        </p>
+      </section>
+
+      <section id="work">
+        <h3>FEATURED WORK</h3>
+
+        <div className="projects">
+          {projects.map((project) => (
+            <div className="projectCard" key={project.title}>
+              <h4>{project.title}</h4>
+              <p>{project.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h3>CAREER JOURNEY</h3>
+
+        <div className="timeline">
+          <div>2022 — Master's in Data Science</div>
+          <div>2023 — Salesforce & Tableau Developer</div>
+          <div>2024 — Enterprise Automation Projects</div>
+          <div>2025 — Master's in Artificial Intelligence</div>
+          <div>2026 — AI Portfolio & Intelligent Solutions</div>
+          <div>Future — AI Solutions Architect</div>
+        </div>
+      </section>
+
+      <section>
+        <h3>SKILLS</h3>
+
+        <div className="skills">
+          <div>Salesforce 95%</div>
+          <div>Tableau 90%</div>
+          <div>Apex / LWC 94%</div>
+          <div>SQL 92%</div>
+          <div>Python 85%</div>
+          <div>AI / ML 80%</div>
+        </div>
+      </section>
+
+      <section>
+        <h3>CERTIFICATIONS</h3>
+
+        <div className="projects">
+          <div className="projectCard">Salesforce Certifications</div>
+          <div className="projectCard">Tableau Certifications</div>
+          <div className="projectCard">AI Certifications</div>
+        </div>
+      </section>
+
+      <section>
+        <h3>CONTACT</h3>
+
+        <p>GitHub</p>
+        <p>LinkedIn</p>
+        <p>Email</p>
+      </section>
+
+    </main>
+  );
+}
