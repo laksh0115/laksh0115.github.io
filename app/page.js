@@ -2,7 +2,9 @@ export default function Home() {
   return (
     <main>
       <section className="hero">
-        <p className="tag">Salesforce × Analytics × AI</p>
+        <p className="tag">
+          Salesforce Developer • Tableau Developer • AI Graduate Student
+        </p>
 
         <h1>
           LAXMI
@@ -17,8 +19,13 @@ export default function Home() {
 
         <div className="buttons">
           #work
+            View Work
+          </a>
 
-          /resume.pdf
+          /resume.pdf secondary"
+          >
+            Download Resume
+          </a>
         </div>
       </section>
 
