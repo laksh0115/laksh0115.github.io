@@ -1,1 +1,1 @@
-# laksh0115.github.io
+Ultimate combined portfolio. Add resume.pdf in public folder. Deploy to Vercel or GitHub.
