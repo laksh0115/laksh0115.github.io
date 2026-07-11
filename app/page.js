@@ -56,7 +56,7 @@ export default function Home() {
           <p>2022 - Master's in Data Science</p>
           <p>2023 - Salesforce & Tableau Developer</p>
           <p>2025 - Master's in Artificial Intelligence</p>
-          <p>2026 - AI Portfolio Development</p>
+          <p>2026 - AI-ML Course Artifacts</p>
         </div>
       </section>
 
