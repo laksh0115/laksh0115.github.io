@@ -95,9 +95,9 @@ export default function Home() {
         <h3>CONTACT</h3>
 
         <div className="timeline">
-          <div>GitHub: github.com/yourusername</div>
-          <div>LinkedIn: linkedin.com/in/yourprofile</div>
-          <div>Email: your@email.com</div>
+          <div>GitHub: github.com/laksh0115</div>
+          <div>LinkedIn: Add Your LinkedIn URL</div>
+          <div>Email: Add Your Email</div>
         </div>
       </section>
     </main>
