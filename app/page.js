@@ -39,9 +39,13 @@ export default function Home() {
         </h2>
 
         <div className="buttons">
-          #work>
+          #work="btn">
+            View Work
+          </a>
 
-          /resume.pdf
+          /resume.pdfName="btn secondary">
+            Download Resume
+          </a>
         </div>
       </section>
 
@@ -105,17 +109,9 @@ export default function Home() {
         <h3>CERTIFICATIONS</h3>
 
         <div className="projects">
-          <div className="projectCard">
-            Salesforce Certifications
-          </div>
-
-          <div className="projectCard">
-            Tableau Certifications
-          </div>
-
-          <div className="projectCard">
-            AI & Data Science Certifications
-          </div>
+          <div className="projectCard">Salesforce Certifications</div>
+          <div className="projectCard">Tableau Certifications</div>
+          <div className="projectCard">AI & Data Science Certifications</div>
         </div>
       </section>
 
