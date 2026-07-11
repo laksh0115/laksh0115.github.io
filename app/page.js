@@ -1,26 +1,29 @@
 export default function Home() {
   const projects = [
     {
-      title: "Opportunity → POS Automation",
-      desc: "Automated opportunity matching process using Salesforce, Apex and integrations."
-    },
-    {
-      title: "Marketing Analytics Platform",
-      desc: "Unified reporting using Tableau, SQL, Google Analytics and data warehouse."
-    },
-    {
-      title: "Sitecore Accessibility Initiative",
-      desc: "Improved accessibility compliance and user experience across enterprise websites."
+      title: "Opportunity to POS Automation",
+      description:
+        "Automated Opportunity-to-POS matching workflow using Salesforce, Apex and integrations.",
     },
     {
       title: "Trade-In Automation",
-      desc: "Automated trade-in workflows and approval processes in Salesforce."
-    }
+      description:
+        "Streamlined trade-in request processing and approval automation.",
+    },
+    {
+      title: "Marketing Analytics Platform",
+      description:
+        "Unified Tableau reporting with marketing and web analytics.",
+    },
+    {
+      title: "Sitecore Accessibility Project",
+      description:
+        "Enhanced accessibility compliance and user experience.",
+    },
   ];
 
   return (
     <main>
-
       <section className="hero">
         <p className="tag">Salesforce × Analytics × AI</p>
 
@@ -32,17 +35,13 @@ export default function Home() {
 
         <h2>
           Building Intelligent Enterprise Solutions Through CRM,
-          Analytics & Artificial Intelligence.
+          Analytics & Artificial Intelligence
         </h2>
 
         <div className="buttons">
-          work" className="btn">
-            View Work
-          </a>
+          #work>
 
           /resume.pdf
-            Download Resume
-          </a>
         </div>
       </section>
 
@@ -51,13 +50,14 @@ export default function Home() {
 
         <p>
           I help organizations transform data into intelligent business
-          decisions.
+          decisions through Salesforce development, Tableau analytics,
+          enterprise automation, and Artificial Intelligence.
         </p>
 
         <p>
-          My background combines Salesforce development, Tableau analytics,
-          enterprise automation and artificial intelligence to build scalable
-          business solutions that create measurable impact.
+          Currently working as a Salesforce & Tableau Developer and pursuing
+          a Master's degree in Artificial Intelligence with a specialization
+          in Data Analytics.
         </p>
       </section>
 
@@ -68,7 +68,7 @@ export default function Home() {
           {projects.map((project) => (
             <div className="projectCard" key={project.title}>
               <h4>{project.title}</h4>
-              <p>{project.desc}</p>
+              <p>{project.description}</p>
             </div>
           ))}
         </div>
@@ -82,7 +82,7 @@ export default function Home() {
           <div>2023 — Salesforce & Tableau Developer</div>
           <div>2024 — Enterprise Automation Projects</div>
           <div>2025 — Master's in Artificial Intelligence</div>
-          <div>2026 — AI Portfolio & Intelligent Solutions</div>
+          <div>2026 — AI Innovation & Portfolio Development</div>
           <div>Future — AI Solutions Architect</div>
         </div>
       </section>
@@ -91,12 +91,13 @@ export default function Home() {
         <h3>SKILLS</h3>
 
         <div className="skills">
-          <div>Salesforce 95%</div>
-          <div>Tableau 90%</div>
-          <div>Apex / LWC 94%</div>
-          <div>SQL 92%</div>
-          <div>Python 85%</div>
-          <div>AI / ML 80%</div>
+          <div>Salesforce — 95%</div>
+          <div>Apex / LWC — 94%</div>
+          <div>Tableau — 90%</div>
+          <div>SQL — 92%</div>
+          <div>Python — 85%</div>
+          <div>AI / Machine Learning — 80%</div>
+          <div>Sitecore — 85%</div>
         </div>
       </section>
 
@@ -104,20 +105,44 @@ export default function Home() {
         <h3>CERTIFICATIONS</h3>
 
         <div className="projects">
-          <div className="projectCard">Salesforce Certifications</div>
-          <div className="projectCard">Tableau Certifications</div>
-          <div className="projectCard">AI Certifications</div>
+          <div className="projectCard">
+            Salesforce Certifications
+          </div>
+
+          <div className="projectCard">
+            Tableau Certifications
+          </div>
+
+          <div className="projectCard">
+            AI & Data Science Certifications
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h3>EDUCATION</h3>
+
+        <div className="timeline">
+          <div>
+            University of Michigan-Dearborn — Master's in Data Science
+          </div>
+
+          <div>
+            Master's in Artificial Intelligence (Data Analytics)
+          </div>
         </div>
       </section>
 
       <section>
         <h3>CONTACT</h3>
 
-        <p>GitHub</p>
-        <p>LinkedIn</p>
-        <p>Email</p>
+        <div className="timeline">
+          <div>GitHub</div>
+          <div>LinkedIn</div>
+          <div>Email</div>
+          <div>Resume</div>
+        </div>
       </section>
-
     </main>
   );
 }
