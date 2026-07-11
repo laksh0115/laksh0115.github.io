@@ -38,4 +38,73 @@ export default function Home() {
           Analytics & Artificial Intelligence
         </h2>
 
-        <div className="buttons"
+        <div className="buttons">
+          #work
+
+          /resume.pdf
+            Download Resume
+          </a>
+        </div>
+      </section>
+
+      <section className="about">
+        <h3>ABOUT</h3>
+
+        <p>
+          Salesforce Developer, Tableau Developer, and AI Graduate Student
+          focused on building intelligent enterprise solutions through CRM,
+          analytics, automation, and artificial intelligence.
+        </p>
+      </section>
+
+      <section id="work">
+        <h3>FEATURED WORK</h3>
+
+        <div className="projects">
+          {projects.map((project) => (
+            <div className="projectCard" key={project.title}>
+              <h4>{project.title}</h4>
+              <p>{project.description}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h3>CAREER JOURNEY</h3>
+
+        <div className="timeline">
+          <div>2022 — Master's in Data Science</div>
+          <div>2023 — Salesforce & Tableau Developer</div>
+          <div>2024 — Enterprise Automation Projects</div>
+          <div>2025 — Master's in Artificial Intelligence</div>
+          <div>2026 — AI Innovation & Portfolio Development</div>
+          <div>Future — AI Solutions Architect</div>
+        </div>
+      </section>
+
+      <section>
+        <h3>SKILLS</h3>
+
+        <div className="skills">
+          <div>Salesforce — 95%</div>
+          <div>Apex / LWC — 94%</div>
+          <div>Tableau — 90%</div>
+          <div>SQL — 92%</div>
+          <div>Python — 85%</div>
+          <div>AI / Machine Learning — 80%</div>
+        </div>
+      </section>
+
+      <section>
+        <h3>CONTACT</h3>
+
+        <div className="timeline">
+          <div>GitHub</div>
+          <div>LinkedIn</div>
+          <div>Email</div>
+        </div>
+      </section>
+    </main>
+  );
+}
